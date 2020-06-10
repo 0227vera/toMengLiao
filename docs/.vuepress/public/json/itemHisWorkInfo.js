@@ -1,6 +1,15 @@
+/**
+ * conpany: 公司名
+ * industry: 行业
+ * time: 在公司时间
+ * ca: 职业类别
+ * work: 主要工作是什么
+ * money: 薪资
+ */
+
 export default [
   { 
-    type: 1,
+    company: '乐知行',
     industry:'软件开发工程师-前端',
     time: '20180705-至今',
     ca:'互联网/智慧校园',
@@ -17,7 +26,7 @@ export default [
     money: '保密'
   },
   { 
-    type: 0,
+    company: '乐步',
     industry:'web前端开发工程师',
     time: '2017011-201807',
     ca:'互联网/线上教育',

@@ -20,7 +20,7 @@
         <li v-for="(item,index) in itemHisWorkInfo" :key="index" :data-content="itemHisWorkInfo.length-index">
           <div>
             <span>公司名称：</span>
-            <span>{{getCompany(item.type)}}</span>
+            <span>{{item.company}}</span>
           </div>
           <div>
             <span>所属行业：</span>
@@ -31,7 +31,7 @@
             <span>{{item.time}}</span>
           </div>
           <div>
-            <span>职位类别：</span>
+            <span>职业类别：</span>
             <span>{{item.ca}}</span>
           </div>
           <div>
@@ -54,7 +54,7 @@
         <li v-for="(item,index) in itemHisInfo" :key="index" :data-content="itemHisInfo.length-index">
           <div>
             <span>所在公司：</span>
-            <span>{{getCompany(item.type)}}</span>
+            <span>{{item.company}}</span>
           </div>
           <div>
             <span>项目名称：</span>
@@ -67,10 +67,6 @@
           <div>
             <span>项目中的角色：</span>
             <span>{{item.role}}</span>
-          </div>
-          <div>
-            <span>是否前后端分离：</span>
-            <span>{{item.isSeparate ? '是' : '否'}}</span>
           </div>
           <div>
             <span>项目内容和职责：</span>
@@ -109,11 +105,6 @@ export default {
       itemHisInfo,
       itemHisWorkInfo
     };
-  },
-  methods:{
-    getCompany(num){
-      return ['北京乐步教育科技有限公司(NoBook)','北京讯飞乐知行软件有限公司'][num]
-    }
   }
 };
 </script>
@@ -301,7 +292,7 @@ export default {
       }
       div{
         width: 50%;
-        float: left;
+        // float: left;
         line-height: 40px;
         &>span{
           display: inline-block;

@@ -38,6 +38,12 @@ npm run publish
 │   ├── .vuepress
 │   │   ├── components (需要书写的文件)
 │   │   ├── public (公共的静态文件)
+│   │   │   ├── img (blog需要的图片信息)
+│   │   │   └── json (关于我的页面的信息配置)
+│   │   │   │   ├── baseInfo.js 基本信息
+│   │   │   │   ├── itemHisInfo.js 项目经验
+│   │   │   │   ├── itemHisWorkInfo.js 工作经验
+│   │   │   │   ├── skillInfo.js  专业技能
 │   │   ├── styles (自定义的颜色主题颜色，以及相关的全局配置)
 │   │   │   ├── index.styl (全局的样式)
 │   │   │   └── palette.styl (全局的颜色配置)
