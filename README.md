@@ -24,6 +24,12 @@ markdown的写法，以及标准，同时这也是blog用的最多的地方
 
 4. npm start
 
+## blog发布
+
+npm run publish
+
+> 注意：如果你是windows电脑不要使用cmd或者vscode的命令行（终端），使用`git bath`发布
+
 ## 目录结构
 
 ```tree
